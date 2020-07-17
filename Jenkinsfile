@@ -9,8 +9,8 @@ node{
     {
         //sh 'sudo docker-compose build'
         //sh 'sudo docker-compose up -d'
-        sh '$echo jenluis | sudo -S docker-compose build'
-        sh '$echo jenluis | sudo -S docker-compose up -d'
+        sh 'echo 'jenluis' | sudo -S sudo docker-compose build'
+        sh 'echo 'jenluis' | sudo -S sudo docker-compose up -d'
     }
     stage('PUSH image to Docker Hub')
     {
